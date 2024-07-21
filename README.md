@@ -37,6 +37,53 @@ function App() {
 export default App;
 ```
 
+- Adding tailwindcss and prettier
+
+```bash
+npm install -D tailwindcss postcss autoprefixer prettier prettier-plugin-tailwindcss
+```
+
+- Initialize tailwind.config.js to look for all JavaScript and TypeScript files, and add prettier-plugin-tailwindcss
+
+```js
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {},
+  },
+  plugins: ['prettier-plugin-tailwindcss'],
+};
+```
+
+and then add the required headers in index.css
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+- Add .prettierrc.json and set the following rules:
+
+```json
+{
+	"semi": true,
+	"trailingComma": "all",
+	"singleQuote": true,
+	"printWidth": 100,
+	"tabWidth": 2,
+	"endOfLine": "auto",
+	"plugins": ["prettier-plugin-tailwindcss"]
+}
+```
+
+- Replace .eslintrc.cjs with .eslintrc.json and simply add the following:
+
+```json
+
+```
+
 ## Requirement Documentation
 
 - Very simple application, where users can order one or more pizzas from a menu
