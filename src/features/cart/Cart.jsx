@@ -36,7 +36,7 @@ function Cart() {
       <h2>Your cart, %NAME%</h2>
 
       <div>
-        <Button to="/order/new"></Button>
+        <Button to="/order/new" type="primary"></Button>
         <button>Clear cart</button>
       </div>
     </div>
