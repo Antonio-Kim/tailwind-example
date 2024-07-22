@@ -1,8 +1,16 @@
-# Fast React Pizza
+# Tailwind CSS Example
 
-A simple website that you can order some delicious pizzas.
+Here's a project demonstrating using Tailwind CSS in React. These are my references and there are few notable concepts here that are worth learning and re-using them in the future.
 
-Here are the steps to initialize React using Vite. This will eventually moved to Documentation
+1. Setting up react - this might be very basic but the project has a way to initialize react and integrate many of the libraries commonly used today. The steps are shown below.
+2. In terms of spacing, many of them are used with `flex items-center justify-between` and `w-full` some variations to them so that spacing of components are done properly.
+3. Loader.jsx has nice way to create fade background for loading, which could be reused for other components, such as a login page or pop-ups
+4. App.jsx is used mainly for routing and AppLayout.jsx is used to create structure of the page. The Header component is so commonly used that it will be good to revisit again in the future
+5. The project is divided using features, not pages nor components.
+
+## Initializing React using vite
+
+Here are the steps to initialize React using Vite
 
 - npm i
 - npm i eslint vite-plugin-eslint eslint-config-react-app --save-dev
@@ -68,13 +76,13 @@ and then add the required headers in index.css
 
 ```json
 {
-	"semi": true,
-	"trailingComma": "all",
-	"singleQuote": true,
-	"printWidth": 100,
-	"tabWidth": 2,
-	"endOfLine": "auto",
-	"plugins": ["prettier-plugin-tailwindcss"]
+  "semi": true,
+  "trailingComma": "all",
+  "singleQuote": true,
+  "printWidth": 100,
+  "tabWidth": 2,
+  "endOfLine": "auto",
+  "plugins": ["prettier-plugin-tailwindcss"]
 }
 ```
 
