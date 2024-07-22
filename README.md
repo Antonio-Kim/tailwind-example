@@ -81,7 +81,9 @@ and then add the required headers in index.css
 - Replace .eslintrc.cjs with .eslintrc.json and simply add the following:
 
 ```json
-
+{
+  "extends": "react-app"
+}
 ```
 
 ## Requirement Documentation
