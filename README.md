@@ -12,6 +12,7 @@ Here's a project demonstrating using Tailwind CSS in React. These are my referen
 
 Here are the steps to initialize React using Vite
 
+- npm create vite@latest (then select react and javascript in the menu)
 - npm i
 - npm i eslint vite-plugin-eslint eslint-config-react-app --save-dev
 - add ".eslintrc.json" and add the following code:
@@ -101,8 +102,7 @@ and then add the required headers in index.css
 - [x] The pizza menu can change, so it should be **loaded from an API**
 - Users can add multiple pizzas to a cart before ordering
 - Ordering requires just the user's name, phone number, and address
-- If possible, GPS locaiton should also be provided, to make delivery easier
-- User's can mark their order as "priority" for an additional 20% of the cart price
+- If possible, GPS location should also be provided, to make delivery easier
 - Orders are made by sending POST request with the order data to the API
 - Payments are made on delivery, so no payment processing is necessary in the app
 - Each order will get a unique ID that should be displayed, so the user can later look up their order based on the ID
